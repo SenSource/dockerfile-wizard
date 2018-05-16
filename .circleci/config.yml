@@ -90,9 +90,9 @@ workflows:
   dockerfile_wizard:
     jobs:
       - build:
-          context: org-global
+          context: vea
 
       - test_image:
-          context: org-global
+          context: vea
           requires:
             - build
