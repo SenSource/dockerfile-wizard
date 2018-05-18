@@ -45,7 +45,7 @@ jobs:
 
       # custom steps
       - run: echo "RUN sudo gem install compass" >> Dockerfile
-      - run: echo "RUN sudo npm install -g bower gulp nsp eslint" >> Dockerfile
+      - run: echo "RUN sudo npm install -g yarn bower gulp nsp eslint" >> Dockerfile
       - run: echo "RUN sudo npm install -g gulp-nsp eslint-plugin-lodash" >> Dockerfile
 
       - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
