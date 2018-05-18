@@ -6,7 +6,7 @@ image_config: &image_config
 
   IMAGE_NAME: node6-pg-ruby-sass
 
-  IMAGE_TAG: 1.0.0
+  IMAGE_TAG: 1.0.1
 
   # NOTE: if you're modifying this config.yml file manually
   # rather than using the included setup script,
@@ -59,7 +59,7 @@ jobs:
 
   test_image:
     docker:
-      - image: sensource/node6-pg-ruby-sass:1.0.0
+      - image: sensource/node6-pg-ruby-sass:1.0.1
         environment:
           <<: *image_config
 
