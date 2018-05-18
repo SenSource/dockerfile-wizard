@@ -59,7 +59,7 @@ jobs:
 
   test_image:
     docker:
-      - image: $DOCKER_USERNAME/$IMAGE_NAME:$IMAGE_TAG
+      - image: sensource/node6-pg-ruby-sass:1.0.0
         environment:
           <<: *image_config
 
